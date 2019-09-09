@@ -9,7 +9,7 @@
 import Foundation
 
 struct MusicWrapper: Codable {
-    let trackList: [MusicInfo]
+    let trackList: [TrackInfo]
 }
 
 struct AllInfo: Codable {
@@ -17,10 +17,10 @@ struct AllInfo: Codable {
 }
 
 struct BodyInfo: Codable {
-    let trackList: MusicInfo
+    let trackList: TrackInfo
 }
 
-struct MusicInfo : Codable {
+struct TrackInfo : Codable {
     let trackName: String
     let artistName: String
     let albumName: String
